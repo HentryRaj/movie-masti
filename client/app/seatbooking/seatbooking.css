@@ -1,0 +1,15 @@
+.seatbook{
+  width: 30px;
+  height: 18px;
+  background-color: #d1dade;
+  text-align: center;
+  border-radius: 9px;
+  border: 1px solid #d4c5c5;
+  font-size: 12px;
+}
+#seat{
+  background-color: #6f90a1;
+}
+
+.seatbook { background-color: transpraent; }
+.seatbook.green { background-color: #00cc00; }
