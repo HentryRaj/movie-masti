@@ -3,9 +3,12 @@
 import mongoose from 'mongoose';
 
 var PaymentendpointSchema = new mongoose.Schema({
-  name: String,
-  info: String,
-  active: Boolean
+  movie: String,
+  theatre: String,
+  bookedSeats: String,
+  grandTotal: Number,
+  date: String,
+  time:String
 });
 
 export default mongoose.model('Paymentendpoint', PaymentendpointSchema);

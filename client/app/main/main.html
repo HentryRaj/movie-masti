@@ -1,6 +1,6 @@
 <div class="container">
   <header class="hero-unit" id="banner">
-    <p style="text-align:center;font-size:50px;color:#353e42;font-family:freedom">Movie Masti</p>
+    <p style="text-align:center;font-size:70px;font-family:freedom"><span id="sty2">Movie</span> <span id="sty3"> Masti</span><span class="glyphicon glyphicon-fire" id="sty4"></span></p>
   </header>
   <div class="row">
     <div class="carousel slide" id="myCarousel">
@@ -42,15 +42,21 @@
 
     </div><!-- end myCarousel -->
     <br>
+    <br>
+    <br>
     <div class="row">
-      <p style="text-align:center;font-size:30px">NOW SHOWING</p>
+      <p style="text-align:center;font-size:35px;color:#f44336;font-family:Lucida Calligraphy;">NOW SHOWING</p>
+      <br>
+      <br>
       <div class="col-sm-6 col-md-4" ng-repeat="movie in mainCtrl.movies">
         <div class="thumbnail" >
           <img src="{{movie.Poster}}" alt="poster" style="height:380px;">
           <div class="caption">
-            <h3></h3>
-            <p></p>
-            <p><a ng-click="mainCtrl.select(movie.Name)" class="btn btn-primary" role="button">BOOK</a></p>
+            <h2 id="movie">{{movie.Name}}</h2>
+            <p>{{movie.Genre}}</p>
+            <p>{{movie.Year}}</p>
+            <p>{{movie.Runtime}}</p>
+            <p><a ng-click="mainCtrl.select(movie.Name)" class="btn btn-danger" role="button">BOOK</a></p>
           </div>
         </div>
       </div>

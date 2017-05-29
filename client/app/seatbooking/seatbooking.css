@@ -8,8 +8,39 @@
   font-size: 12px;
 }
 #seat{
-  background-color: #6f90a1;
+  height: 100%;
+  width: 100%;
+  background-color: #657f94;
 }
-
+#let{
+  padding-left: 450px;
+  font-size: 40px;
+}
+#let2{
+  padding-left: 420px;
+  font-size: 40px;
+}
+#summ{
+      margin-left: 313px;
+}
 .seatbook { background-color: transpraent; }
 .seatbook.green { background-color: #00cc00; }
+
+.seatbook:hover{
+  cursor:pointer;
+}
+
+.selected{
+  color: white;
+  background-color: green;
+}
+
+.booked{
+  color: black;
+  background-color: grey;
+}
+
+.no-decoration{
+  text-decoration: none;
+  color: black;
+}

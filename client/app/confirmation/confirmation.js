@@ -3,8 +3,7 @@
 angular.module('yotemplateApp')
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/theatre', {
-        template: '<theatre></theatre>',
-          authenticate: '/admin'
+      .when('/confirmation', {
+        template: '<confirmation></confirmation>'
       });
   });

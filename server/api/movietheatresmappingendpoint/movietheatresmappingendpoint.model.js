@@ -3,10 +3,22 @@
 import mongoose from 'mongoose';
 
 var MovietheatresmappingendpointSchema = new mongoose.Schema({
-TheatreName: String,
-City: String,
-MovieName: String,
-PlaceName: String,
+TheatreName: {
+  type:String,
+  required:true
+},
+City: {
+  type:String,
+  required:true
+},
+MovieName:{
+  type: String,
+  required:true
+},
+PlaceName:{
+  type: String,
+  required:true
+},
 Dates: [{
 type: String
 }],

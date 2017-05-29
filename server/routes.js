@@ -9,6 +9,7 @@ import path from 'path';
 
 export default function(app) {
   // Insert routes below
+  app.use('/api/confirmationendpoints', require('./api/confirmationendpoint'));
   app.use('/api/ratingendpoints', require('./api/ratingendpoint'));
   app.use('/api/paymentendpoints', require('./api/paymentendpoint'));
   app.use('/api/movietheatresmappingendpoints', require('./api/movietheatresmappingendpoint'));

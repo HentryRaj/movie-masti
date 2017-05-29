@@ -26,5 +26,17 @@
 }
 
 body{
-  background-color: #b6c4cb;
+  background-color: #657f94;
+}
+#sty2{
+  color:black;
+}
+#sty3{
+  color:white;
+}
+#sty4{
+  color:crimson;
+}
+#movie{
+  color:#0095d8;
 }
